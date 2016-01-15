@@ -3,7 +3,7 @@ layout: post
 title: Reference Vs Value Types in C#
 ---
 
-```csharp
+```
 int a = 3;
 int b = 4;
 a = b;
