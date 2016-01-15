@@ -3,7 +3,7 @@ layout: post
 title: Reference Vs Value Types in C#
 ---
 
-```c
+```csharp
 int a = 3;
 int b = 4;
 a = b;
@@ -17,7 +17,7 @@ You may be thinking I've lost my mind and the answer is obvious, and you'd be ri
 
 Here's another example, this time using an object. Let's say we have a class called `NumberStore`, this class has a single property called `Number` that stores an integer. Let's got through similar steps to the above code.
 
-```c
+```csharp
 NumberStore a = new Numberstore();
 a.Number = 3;
 NumberStore b = new NumberStore();
