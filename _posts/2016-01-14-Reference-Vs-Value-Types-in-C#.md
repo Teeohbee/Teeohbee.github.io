@@ -30,4 +30,8 @@ Console.WriteLine(a.Number);
 
 What would you expect to be displayed this time round? In fact, the answer is 9. Confused? Don't be - welcome to C#!
 
+The first few lines of code should be fairly straight forward. We instantiate a NumberStore object with the `new NumberStore()` command and then set that objects `Number` property to 3. We then go through the process again for a new instance of the NumberStore class, this time giving its property Number the value of 4.
+
+Line 6 is the key here. On this line it looks like we simply assign the value of `a` to the variable `b`, but that isn't strictly true. It comes down to the way variables are stored or referenced in C# depending on their type, and in this case, as the blog title suggests, we've got examples of a value and reference type varibale.
+
 ![_config.yml]({{ site.baseurl }}/images/helloworld.png)
