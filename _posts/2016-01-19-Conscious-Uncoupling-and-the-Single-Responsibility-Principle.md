@@ -15,6 +15,7 @@ Let's look at a very simple code example using a good old fashioned chess analog
 
 ```Ruby
 class Pawn
+
   def initialize(xaxis, yaxis)
     @xaxis = xaxis
     @yaxis = yaxis
@@ -24,5 +25,6 @@ class Pawn
     board = Board.new(10, colour)
     board.accept_piece
   end
+  
 end
 ```
