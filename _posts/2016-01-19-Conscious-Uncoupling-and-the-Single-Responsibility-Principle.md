@@ -34,7 +34,7 @@ class Ship
     @hp == 0
   end
   
-  place_on_board()
+  def place_on_board()
     game_board = Board.new()
     game_board.add_ship
   end
