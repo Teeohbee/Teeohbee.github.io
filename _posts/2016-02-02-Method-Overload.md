@@ -38,3 +38,8 @@ int MethodOne(string inputstring)
     // code here
   }
 ```
+
+## Method Overloading
+
+The importance of signatures become apparent when taking a closer look at the first codeblock again. We have two valid method definitions with the exact same name, `MethodOne`. This means one method can have multiple implementations based on the type or number of arguments being passed in as parameters.
+
