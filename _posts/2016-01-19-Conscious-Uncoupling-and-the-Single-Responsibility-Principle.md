@@ -9,11 +9,11 @@ I've been reading a fair bit about the single responsibility principle recently,
 
 The simplest explanation is that in general every class, or module of code, should only ever have one 'job' - be responsible for only one aspect of functionality in the software.
 
-Robert 'Uncle Bob' Martin's quote at the top of this blog post refers to one of the key advatnages that SRP classes afford you. Change. Change is inevitable. Requirements change, clients change, technologies change, everything changes and by following the SRP, you can somewhat mitigate the chaos that change usually causes in your codebase.
+Robert 'Uncle Bob' Martin's quote at the top of this blog post refers to one of the key advantages that SRP classes afford you. Change. Change is inevitable. Requirements change, clients change, technologies change, everything changes and by following the SRP, you can somewhat mitigate the chaos that change usually causes in your codebase.
 
 Let's look at a very simple code example using a good old fashioned game of battleship.
 
-```Ruby
+{% highlight ruby %}
 class Ship
   attr_reader :type, :size, :hp
 
@@ -33,13 +33,14 @@ class Ship
   def has_sunk?
     @hp == 0
   end
-  
+
   def place_on_board()
     game_board = Board.new()
     game_board.add_ship
   end
 end
-```
+{% endhighlight %}
+
 
 So we've got a class called Ship, you instantiate it with an argument determining it's type and therefore size and health points. It has a method that allows it to take a hit, check to see whether it has sunk and place itself on a board. What looks wrong here?
 
