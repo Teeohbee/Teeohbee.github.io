@@ -10,6 +10,7 @@ _Note - I remember struggling to get some dependencies correctly set up in our f
 _Ionic must minify it's production code before deploying onto mobile phones and so our injection names became meaningless. Defining the names before the actual injection allowed our code to be minified without any loss of meaning. The excerpt below from the original blog post explains it much better._
 
 ---
+
 Dependency injection is one of AngularJS's best patterns. It makes testing much simpler, as well as making it more clear upon which any particular object depends. AngularJS is very flexible on how things can be injected. The simplest version requires just passing the name of the dependency into the function for the module:
 
 {% highlight javascript %}
