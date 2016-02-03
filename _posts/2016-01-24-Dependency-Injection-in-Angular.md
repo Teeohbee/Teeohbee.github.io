@@ -11,6 +11,7 @@ _Ionic must minify it's production code before deploying onto mobile phones and 
 
 ---
 
+
 Dependency injection is one of AngularJS's best patterns. It makes testing much simpler, as well as making it more clear upon which any particular object depends. AngularJS is very flexible on how things can be injected. The simplest version requires just passing the name of the dependency into the function for the module:
 
 {% highlight javascript %}
