@@ -9,7 +9,7 @@
 title: teeohbee.github.io
 email: teeohbee@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  The trials and tribulations of a junior developer making code, breaking
+  The trials and tribulations of a junior developer - making code, breaking
   code and hopefully in the process honing his craft. Perhaps.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://teeohbee.github.io" # the base hostname & protocol for your site
