@@ -36,10 +36,10 @@ The first few lines of code should be fairly straight forward. We instantiate a 
 
 Line 6 is the key here. On this line it looks like we simply assign the value of `a` to the variable `b`, but that isn't strictly true. It comes down to the way variables are stored or referenced in C# depending on their type, and in this case, as the blog title suggests, we've got examples of a value and reference type variable.
 
-###Value Types
+### Value Types
 Value types are the simpler of the two and demonstrated in the first example above. The reassignment of variable `a` to the value of `b` is exactly that, the variable changes from storing the integer 3 to the integer 4. These integers are static values, and thus after assigning `a` to `b`, changing the value of one variable doesn't affect the other.
 
-###Reference Types
+### Reference Types
 Reference types at first appear to display odd beahviour, especially in the example above, until you understand exactly how they work. Rather than storing a value, the NumberStore variables in the example simply contain a reference to that object's location on the heap. When a new object is instantiated with `new NumberStore`, that object is created and stored somewhere in memory, any variable created to hold that object simply points to that specific point in memory.
 
 So on the crucial line 6, we are not assigning the value of `b` to `a`, we're actually changing the variable `a` to actually point to NumberStore `b`'s location in memory. After this point in the code, both variable `a` and `b` are pointing to the exact same object in memory, and so it follows that any change to one variable, will affect the other. It's also worth noting that at this point the original NumberStore object assigned to variable `a` has been lost, cannot be reached, and will eventually be cleaned up by the system and removed.
