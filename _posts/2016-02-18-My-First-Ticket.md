@@ -3,7 +3,7 @@ layout: post
 title: My First Ticket
 ---
 
-{% highlight %}
+{% highlight ruby %}
 As an ads ops
 When I work with our sites
 Then I would like to use the new GPT tags for serving ads
