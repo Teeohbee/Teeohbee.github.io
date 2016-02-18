@@ -3,11 +3,11 @@ layout: post
 title: My First Ticket
 ---
 
-{% highlight ruby %}
+```
 As an ads ops
 When I work with our sites
 Then I would like to use the new GPT tags for serving ads
-{% endhighlight %}
+```
 
 This was my first ticket. Such responsibility. Much cool. Many wow. So where to start?
 
