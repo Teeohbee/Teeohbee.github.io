@@ -24,14 +24,14 @@ My coding education and practice so far at this point had excluded one vital par
 3. Fix It
 4. Start Making Changes (Slowly)
 
-1. Understand What It Does
+###1. Understand What It Does
 This was probably the hardest step for me. It felt a little like gazing up at a gargantuan oppressive skyscraper, before stepping inside to find a maze of corridors and rooms with little direction. Where to even begin?
 
 Part of the answer it turned out was sat next to me, a colleague with far more experience with the current codebase than me. They were fortunately willing to be my guide, and saved me a lot of blank staring at functions that might not have beared any significance to the task at hand. I feel this should be the first step of any programmer interacting with someone else's work - grab the author, or at least someone who knows more about it than you. This can help immensely in breaking down a large codebase and quickly helping you focus on the code you're interested in.
 
 The next step was more granular, with the help of my colleage I'd honed in on the area of interest. I'd seen function names and variables that I recognised but still wasn't entirely sure how it all fit together. Now you need to debug. Set a few break points on areas you think are interesting, build, run and see what happens. Stepping through the code as it's running is invaluable in determining what calls on what, mapping dependencies and generally putting back together the puzzle pieces to form a picture of what you're dealing with.
 
-2. Break It
+###2. Break It
 So you've stepped through the code, seen the processes firing off and got a map of how it all works in your head? No, you don't. Unless the code is immensely simple, you'll never reach that level of code understanding enlightenment simply by reading through line by line and having a few debug run throughs.
 
 To get to grips with a codebase, one must break it. To truly get to grips with a codebase, one must break it and understand why it broke.
