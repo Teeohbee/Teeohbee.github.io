@@ -22,7 +22,7 @@ My coding education and practice so far at this point had excluded one vital par
 1. Understand What It Does
 2. Break It
 3. Fix It
-4. Start Making Changes (Commit Often)
+4. Scrap It
 
 ### 1. Understand What It Does
 This is easier said than done and was probably the hardest step for me. It felt a little like gazing up at a gargantuan oppressive skyscraper, before stepping inside to find a maze of corridors and rooms with little direction. Where to even begin?
@@ -30,6 +30,8 @@ This is easier said than done and was probably the hardest step for me. It felt 
 Part of the answer it turned out was sat next to me, a colleague with far more experience with the current codebase than me. They were fortunately willing to be my guide, and saved me a lot of blank staring at functions that might not have borne any significance to the task at hand. I feel this should be the first step of any programmer interacting with someone else's work - grab the author, or at least someone who knows more about it than you. This can help immensely in breaking down a large codebase and quickly helping you focus on the code you're interested in.
 
 The next step was more granular, with the help of my colleague I'd honed in on the area of interest. I'd seen function names and variables that I recognised but still wasn't entirely sure how it all fit together. Now you need to debug. Set a few break points on areas you think are interesting, build, run and see what happens. Stepping through the code as it's running is invaluable in determining what calls on what, mapping dependencies and generally putting back together the puzzle pieces to form a picture of what you're dealing with.
+
+This process becomes even more valuable during the next two steps.
 
 ### 2. Break It
 So you're the man. You've stepped through the code, seen the processes firing off and got a map of how it all works in your head? No, you don't. Unless the code is immensely simple, you'll never reach that level of code understanding enlightenment simply by reading through line by line and having a few debug run throughs.
@@ -41,4 +43,11 @@ This step is easy, and fun! Try writing the code that you wish you had. Try usin
 ### 3. Fix It
 Breaking things is easy, now to fix them.
 
-This is the part where things start to come together.
+This is the part where I felt things start to come together. I feel like the key here is to keep track of the larger picture as you fix the nitty gritty details. Step through the broken code and fix it bit by bit and you'll end up with a much clearer idea of the route through your program.
+
+### 3. Scrap It
+Finally, after breaking the code, and fixing it again, perhaps even adding a few features that actually work, you'll want to scrap it all and git reset hard to a point before you'd even touched the code.
+
+Once you've mopped up the tears of frustration after having just deleted all the code you'd been working on for the last few hours/days/weeks - you'll be ready for some TDD!
+
+It may seem foolish abandoning code that works, but that code was tainted, written while you were exploring and written without the backup of robust tests. You're also now in a much better position to write fresh code, you'll know exactly what to test. You'll have a chance to write better, cleaner code fresh.
