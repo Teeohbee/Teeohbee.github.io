@@ -4,18 +4,16 @@ title: Hoisting Duck In JavaScript
 ---
 
 ```javascript
-var name = "Donald";
-console.log(name);
+var duck = "Donald";
+console.log(duck);
 
-duck();
-
-function duck(){
-    console.log(name);
-    var name = "Daffy";
-    console.log(name);
+function updateDuck(){
+    console.log(duck);
+    var duck = "Daffy";
+    console.log(duck);
 };
 
-duck();
+updateDuck();
 
-console.log(name);
+console.log(duck);
 ```
