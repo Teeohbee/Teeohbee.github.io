@@ -67,4 +67,4 @@ It's also important to note that we declared and assigned a second variable call
 
 Working through this, and specifically playing around in a basic JS file and the chrome console really helped me to understand exactly what was happening here, and I'm hoping I'll be able to explain it a bit better if I ever encounter a similar question again.
 
-Hoisin Duck, Hoisting Duck, do you get it?
+Hoisin Duck / Hoisting Duck, do you get it?
