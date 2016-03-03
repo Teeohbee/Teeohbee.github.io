@@ -50,4 +50,10 @@ Finally, after breaking the code, and fixing it again, perhaps even adding a few
 
 Once you've mopped up the tears of frustration after having just deleted all the code you'd been working on for the last few hours/days/weeks - you'll be ready for some TDD!
 
-It may seem foolish abandoning code that works, but that code was tainted, written while you were exploring and written without the backup of robust tests. You're also now in a much better position to write fresh code, you'll know exactly what to test. You'll have a chance to write better, cleaner code fresh.
+It may seem foolish abandoning code that works, but that code was tainted, written while you were exploring and written without the backup of robust tests. You're also now in a much better position to write fresh code, you'll know exactly what to test and key aspects to look out for. This is the process that helped me get to grips with my first task, and I hope others might find it useful too.
+
+Bonus steps:
+
+### 4. ????
+
+### 5. Profit
