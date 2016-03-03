@@ -13,7 +13,8 @@ The question involved being shown a snippet of code similar to that below, excep
 
 ```javascript
 var duck = "Donald";
-console.log(duck);
+
+updateDuck();
 
 function updateDuck(){
     console.log(duck);
@@ -21,16 +22,15 @@ function updateDuck(){
     console.log(duck);
 };
 
-updateDuck();
-
 console.log(duck);
 ```
 
-Now an awful person, who's terrible at coding might suggest `Donald`,`Donald`,`Daffy`,`Daffy`. They would of course be very wrong. Don't be that guy, especially at interview.
+Now an awful person, who's terrible at coding might suggest `Donald`,`Daffy`,`Daffy`. They would of course be very wrong. Don't be that guy, especially at interview :cry:.
 
 ```javascript
 var duck = "Donald";
-console.log(duck);      //=>  "Donald"
+
+updateDuck();
 
 function updateDuck(){
     console.log(duck);  //=>  undefined
@@ -38,7 +38,33 @@ function updateDuck(){
     console.log(duck);  //=>  "Daffy"
 };
 
+console.log(duck);      //=> "Donald"
+```
+The first thing of note here is that updateDuck() is able to run despite the named function being decalred further down the page. This is because of hoisting, a process in by which at runtime, javascript scans your code and moves any function declarations to the top of the page, therefore making them immediately available to invoke as seen in the example above.
+
+Hoisting doesn't just move functions however, as can be seen within the code of our updateDuck function. The first console.log returns `undefined`, this may trip you up for several reasons. Firstly, you'll notice that we're defining a brand new variable of duck within the scope of our function, we are not updating the parent variable duck at all in this function. Fair enough then, at the point in time of the first console.log, the new variable hasn't been defined, but shouldn't `duck` at this point in time reference the parent variable? Why doesn't this return `Donald`?
+
+This is because, variable declarations are hoisted too, in much the same was as functions. Once javascript hoisting has taken place, function and variable declarations have been moved to the top, you'll more clearly be able to see what is going on.
+
+```javascript
+var duck = "Donald";
+
+function updateDuck(){
+    var duck;
+    console.log(duck);  //=>  undefined
+    duck = "Daffy";
+    console.log(duck);  //=>  "Daffy"
+};
+
 updateDuck();
 
 console.log(duck);      //=> "Donald"
 ```
+
+This is what javascript 'sees' and runs and it's clear now why that initial duck variable is undefined, it's been declared, scoped to that particular function and thus no longer linked to the parent variable of the same name. Yet it hasn't been assigned to anything.
+
+It's also important to note that we declared and assigned a second variable called duck, only within the scope of that particular function. There's nothing in that function that will change the parent classes variable of the same name. This is clear when we see that the final console log displays `Donald`, returning the first variable we declared at the top of the code.
+
+Working through this, and specifically playing around in a basic JS file and the chrome console really helped me to understand exactly what was happening here, and I'm hoping I'll be able to explain it a bit better if I ever encounter a similar question again.
+
+Hoisin Duck, Hoisting Duck, do you get it?
