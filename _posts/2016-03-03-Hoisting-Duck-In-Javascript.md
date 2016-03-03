@@ -3,7 +3,7 @@ layout: post
 title: Hoisting Duck In JavaScript
 ---
 
-Terrrible pun in the title I know, but bear with me on this one.
+Terrrible pun I know, but bear with me on this one, it's really interesting.
 
 Hoisting and Scope in javascript are popular subjects for discussion, and blog posts, as they represent some of the quirks of working in one of the webs most popular languages. They also make great topics for technical interview questions, something I found out to my horror when I got tripped up by just such a question at interview last year.
 
