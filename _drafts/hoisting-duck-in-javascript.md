@@ -25,3 +25,20 @@ updateDuck();
 
 console.log(duck);
 ```
+
+Now an awful person, who's terrible at coding might suggest `Donald`,`Donald`,`Daffy`,`Daffy`. They would of course be very wrong. Don't be that guy, especially at interview.
+
+```javascript
+var duck = "Donald";
+console.log(duck);      //=>  "Donald"
+
+function updateDuck(){
+    console.log(duck);  //=>  undefined
+    var duck = "Daffy";
+    console.log(duck);  //=>  "Daffy"
+};
+
+updateDuck();
+
+console.log(duck);      //=> "Donald"
+```
