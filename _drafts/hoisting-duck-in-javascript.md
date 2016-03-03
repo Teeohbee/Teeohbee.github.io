@@ -9,7 +9,7 @@ Hoisting and Scope in javascript are popular subjects for discussion, and blog p
 
 I fumbled my way through a bodged explanation while I desperately tried to logically work through the example I was being shown. Needless to say, I didn't get the job, but I did go back and research the issue, wanting to get a firmer grip on my understanding of scope and hoisting.
 
-The question involved being shown a snippet of code similar to that below, except with less ducks. I was tasked with estimating exactly what each of the console.logs would display.
+The question involved being shown a snippet of code similar to that below, except with less ducks. I was tasked with estimating exactly what each of the `console.log`s would display.
 
 ```javascript
 var duck = "Donald";
@@ -40,11 +40,11 @@ function updateDuck(){
 
 console.log(duck);      //=> "Donald"
 ```
-The first thing of note here is that updateDuck() is able to run despite the named function being decalred further down the page. This is because of hoisting, a process in by which at runtime, javascript scans your code and moves any function declarations to the top of the page, therefore making them immediately available to invoke as seen in the example above.
+The first thing of note here is that `updateDuck()` is able to run despite the named function being decalred further down the page. This is because of hoisting, a process in by which at runtime, javascript scans your code and moves any function declarations to the top of the page, therefore making them immediately available to invoke as seen in the example above.
 
-Hoisting doesn't just move functions however, as can be seen within the code of our updateDuck function. The first console.log returns `undefined`, this may trip you up for several reasons. Firstly, you'll notice that we're defining a brand new variable of duck within the scope of our function, we are not updating the parent variable duck at all in this function. Fair enough then, at the point in time of the first console.log, the new variable hasn't been defined, but shouldn't `duck` at this point in time reference the parent variable? Why doesn't this return `Donald`?
+Hoisting doesn't just move functions however, as can be seen within the code of our `updateDuck()` function. The first `console.log` returns `undefined`, this may trip you up for several reasons. Firstly, you'll notice that we're defining a brand new variable of duck within the scope of our function, we are not updating the parent variable duck at all in this function. Fair enough then, at the point in time of the first console.log, the new variable hasn't been defined, but shouldn't `duck` at this point reference the parent variable? Why doesn't this return `Donald`?
 
-This is because, variable declarations are hoisted too, in much the same was as functions. Once javascript hoisting has taken place, function and variable declarations have been moved to the top, you'll more clearly be able to see what is going on.
+This is because variable declarations are hoisted too, in much the same was as functions. Once javascript hoisting has taken place, function and variable declarations having been moved to the top, you'll more clearly be able to see what is going on.
 
 ```javascript
 var duck = "Donald";
@@ -61,9 +61,9 @@ updateDuck();
 console.log(duck);      //=> "Donald"
 ```
 
-This is what javascript 'sees' and runs and it's clear now why that initial duck variable is undefined, it's been declared, scoped to that particular function and thus no longer linked to the parent variable of the same name. Yet it hasn't been assigned to anything.
+This is what javascript 'sees' and runs and it's clear now why that initial duck variable is `undefined`. It has been declared, scoped to that particular function and thus no longer linked to the parent variable of the same name. Yet it hasn't been assigned to anything.
 
-It's also important to note that we declared and assigned a second variable called duck, only within the scope of that particular function. There's nothing in that function that will change the parent classes variable of the same name. This is clear when we see that the final console log displays `Donald`, returning the first variable we declared at the top of the code.
+It's also important to note that we declared and assigned a second variable called duck, only within the scope of that particular function. There's nothing in that function that will change the parent classes variable of the same name. This is obvious when we see that the final `console.log` displays `Donald`, returning the first variable we declared at the top of the code.
 
 Working through this, and specifically playing around in a basic JS file and the chrome console really helped me to understand exactly what was happening here, and I'm hoping I'll be able to explain it a bit better if I ever encounter a similar question again.
 
