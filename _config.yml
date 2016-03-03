@@ -18,3 +18,7 @@ github_username:  teeohbee
 
 # Build settings
 markdown: kramdown
+
+# Gem files
+gems:
+  - jemoji
