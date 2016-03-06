@@ -45,7 +45,7 @@ Breaking things is easy, now to fix them.
 
 This is the part where I felt things start to come together. I feel like the key here is to keep track of the larger picture as you fix the nitty gritty details. Step through the broken code and fix it bit by bit and you'll end up with a much clearer idea of the route through your program.
 
-### 3. Scrap It
+### 4. Scrap It
 Finally, after breaking the code, and fixing it again, perhaps even adding a few features that actually work, you'll want to scrap it all and git reset hard to a point before you'd even touched the code.
 
 Once you've mopped up the tears of frustration after having just deleted all the code you'd been working on for the last few hours/days/weeks - you'll be ready for some TDD!
@@ -54,6 +54,6 @@ It may seem foolish abandoning code that works, but that code was tainted, writt
 
 Bonus steps:
 
-### 4. ????
+### 5. ????
 
-### 5. Profit
+### 6. Profit
